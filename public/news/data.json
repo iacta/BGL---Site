@@ -1,8 +1,14 @@
 [
   {
-    "title": "Nova Notícia",
-    "date": "24/05/2024",
-    "content": "Conteúdo da nova notícia",
-    "image": "/bg1.jpg"
+    "title": "Nova Atualização",
+    "date": "01 de Junho de 2024",
+    "content": "Adicionado: \n- 3 Novas casas disponíveis | Vila do Chaves",
+    "image": "/news/images/bg-news1.png"
+  },
+  {
+    "title": "Nova Atualização",
+    "date": "29 de Maio de 2024",
+    "content": "Adicionado:\n- Sistema de Garagem para Organizações.\n- Comando /caixinhas.\n- Comando /soltar automático ao colocar um suspeito em uma cela.\n- Comando /djp (/destruirjetpack).\n- Comando /sacarprop para sacar dinheiro da propriedade (também funciona com /sacarpropriedade).\n\nAlterado:\n- Comando /antela para jornalistas (San News).\n- Nomes de algumas organizações no comando /gps.\n- Valores de recompensa por prender um suspeito (de 2.500 para 8.000 e de 10.000 para membros VIP de Organizações).\n- Comando /tunar para quem tiver o item 'Tunagem de Veículos' (não precisa mais ser usado no inventário).\n- Valor dos contratos, variando agora de 1k a 10k.\n- Comando /soltar não precisa mais informar o ID.\n\nCorrigido:\n- BUG no comando /colherplantacao (Coca).\n- Alguns bugszinhos simples nas concessionárias.\n- BUG que permitia à polícia matar um suspeito sem prendê-lo.\n- Comando /carregarcaminhao para jogadores Mobile.\n- Não gera mais contrato automaticamente em administradores.",
+    "image": "/bg.jpg"
   }
 ]

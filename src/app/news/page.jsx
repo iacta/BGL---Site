@@ -23,7 +23,7 @@ export default function News() {
             } catch (error) {
                 console.error('Error fetching news data:', error);
             } finally {
-                setLoading(false);  // Definir o carregamento como falso após a busca de dados
+                setLoading(false);  
             }
         };
 
@@ -37,7 +37,7 @@ export default function News() {
                     <div className="flex items-start justify-center">
                         <NavBar />
                     </div>
-                    <div className="relative z-10 md:mt-20 lg:mt-36 flex flex-col justify-center items-center">
+                    <div className="relative z-10 md:mt-20 lg:mt-28 flex flex-col justify-center items-center">
                         <h1 className={`${jairo.className} text-6xl`}>
                             NOTÍCIAS
                         </h1>
@@ -52,7 +52,7 @@ export default function News() {
                             </>
                         ) : (
                             newsData.map((item, index) => (
-                                <div key={index} className='pl-5 pr-5 mb-6 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4'>
+                                <div key={index} className='pl-5 pr-5 mb-6 w-full sm:w-1/2 md:w-1/3'>
                                     <CardNews title={item.title} date={item.data} content={item.content} image={item.image} />
                                 </div>
                             ))
@@ -68,8 +68,6 @@ export default function News() {
         </>
     );
 }
-
-
 
 export const SkeletonCard = () => {
     return (
