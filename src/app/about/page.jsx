@@ -10,18 +10,18 @@ export default function About() {
                         <NavBar />
                     </div>
                     <div className="relative z-10 mt-10 flex flex-col justify-center items-center">
-                        <h1 className='text-6xl font-bold'>
+                        <h1 className='text-6xl font-bold text-center'>
                             QUEM SOMOS?
                         </h1>
-                        <p className='pt-6 text-gray-400 font-semibold max-w-[700px] break-words'>
-                            Somos um servidor SA:MP unindo jogadores de todas as partes, aqui construimos laços e familias para a vida toda.
-                            Venha nos conhecer pessoalmente. Estamos sempre trabalhando em novas atualizações e sempre trazendo novos beneficios para todos.
+                        <p className='pt-6 text-gray-400 font-semibold max-w-[700px] break-words text-center px-6 sm:px-0'>
+                            Somos um servidor SA:MP unindo jogadores de todas as partes, aqui construímos laços e famílias para a vida toda.
+                            Venha nos conhecer pessoalmente. Estamos sempre trabalhando em novas atualizações e sempre trazendo novos benefícios para todos.
                         </p>
-                        <div className='pt-20'>
-                            <h1 className='text-5xl font-bold'>
+                        <div className='pt-20 w-full max-w-3xl'>
+                            <h1 className='text-5xl font-bold text-center'>
                                 CONHEÇA NOSSA EQUIPE
                             </h1>
-                            <p>TRABALHAMOS PELA SUA DIVERSÃO!</p>
+                            <p className="text-center">TRABALHAMOS PELA SUA DIVERSÃO!</p>
                             <Equipe />
                         </div>
 
@@ -31,4 +31,3 @@ export default function About() {
         </>
     )
 }
-
