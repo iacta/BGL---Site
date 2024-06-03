@@ -26,15 +26,29 @@ const staff = [
         func: 'Responsável pelo servidor.',
         icon: '/vrauz.png'
     },
+    {
+        name: 'zeet',
+        cargo: 'Fundador',
+        func: 'Responsável pelo servidor.',
+        icon: '/zeet.png'
+    },
+    {
+        name: 'iacta',
+        cargo: 'Ajudante',
+        func: 'Responsável pelo desenvolvimento Web.',
+        icon: '/iacta.png'
+    },
 ];
 
 export function Equipe() {
+    const isSmallScreen = typeof window !== 'undefined' && window.innerWidth < 640;
+
     return (
         <Carousel className="w-full max-w-full sm:max-w-3xl">
             <CarouselContent className="flex items-center">
                 {staff.map((staffMember, index) => (
                     <CarouselItem key={index} className="w-full sm:w-60 p-4">
-                        <Card className={`bg-gray-950 text-white h-full rounded-lg border-transparent shadow-2xl ${window.innerWidth < 640 ? 'sm:transform sm:scale-90' : ''}`}>
+                        <Card className={`bg-gray-950 text-white h-full rounded-lg border-transparent shadow-2xl ${isSmallScreen ? 'sm:transform sm:scale-90' : ''}`}>
                             <CardContent className="relative flex flex-col items-center justify-center h-full pt-2">
                                 <img src={staffMember.icon} alt="" className="h-24 w-24 rounded-full border-4 border-transparent mb-4 transform -scale-x-100" />
                                 <div className="text-center">
@@ -52,3 +66,4 @@ export function Equipe() {
         </Carousel>
     );
 }
+
