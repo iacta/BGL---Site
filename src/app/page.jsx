@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="min-h-screen bg-cover bg-center bg-no-repeat relative text-black" style={{ backgroundImage: "url('/bg2.jpg')" }}>
+      {/* <div className="min-h-screen bg-cover bg-center bg-no-repeat relative text-black" style={{ backgroundImage: "url('/bg2.jpg')" }}>
         <div className="relative z-10">
           <div className="bg-white bg-opacity-80 p-10 rounded-lg">
             <h2 className="text-xl font-bold mb-4">Mais Informações</h2>
@@ -39,7 +39,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
